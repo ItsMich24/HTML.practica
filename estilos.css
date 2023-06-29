@@ -1,0 +1,39 @@
+body{
+    background-color:#fffb76 ; /*Pone color a la pagina*/
+    color : #d46800 ; /*Pone color a las letras*/
+    font-family: 'Cinzel', serif; /*Cambia el estilo de letra*/   
+}
+
+h3 { /* Todos los elementos del h3 seran de x color*/
+    color:  #8d0800;
+    font-family: 'Cinzel', serif; /*Cambia fuente a elementos h3*/
+    font-family: 'Handlee', cursive;
+    font-size : 23px;  /* tamaño de la fuente*/
+}
+
+h1 , p{
+    color : #3f0e03; /*Cambia color al titulo (H1) y parrafo(P)*/
+    
+}
+
+img { /*todo lo que tenga img seran los mismos cambios*/
+    /*width : 300px ; /*cambia el ancho de las imagenes*/
+    /*height: 240px ; /*Cambia la altura*/
+    border-style:dashed; /*Pone margen a la imagen / dashed y double : combina 2 marcos*/
+    border-color :darkorange ; /*Cambia el color del borde*/
+    margin-left: 20px; /*Se separa de la pagina*/
+    margin-bottom: 15px; /*Separa las imagenes que estan en vertical*/
+    padding: 15px; /*Crea un espacio dentro*/
+
+}
+
+/*CAMBIAR TAMAÑO A UNA SOLA IMAGEN */
+/*Solo los elementos que tengan img1 van a cambiar*/
+.img1 {
+    width : 300px  ;
+    height: 240px ;
+}
+
+a , small { /*Cambia el color de los enlaces(a) y el pie de pagina (small)*/
+    color:#8d0800 ; 
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html><!--Define si sera HTML o XML-->
+<html lang = "es">
+<!--Lo que va dentro del head no se vera
+en el sitio web-->
+<head>
+    <title>Pagina de makakos</title>
+    <meta charset="UTF-8"> <!--proporciona meta datos a las paginas html
+    META: da datos a la web sobre nuestra pagina
+    CHARSET : especifica el conjunto de caracteres que se van a utilizar
+    UTF-8 :  estandar de codificacion que representa cualquier caracter, se usa para que la pagina se muestre 
+    correctamente-->
+
+    <!--conectar html con css-->
+    <link href="estilos.css" rel="stylesheet"> <!--Rel:relacion con la hoja de estilos-->
+
+    <!--Pega el Link para la fuente de la pagina-->
+    <!---Fuente para elementos del H1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+
+
+    <!--Fuente para elementos de H3-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Handlee&display=swap" rel="stylesheet">
+
+</head>
+<!--Lo que va dentro del body se vera
+en el sitio web-->
+<body>
+    <h1>Pagina de makakos</h1>
+
+    <h3>Imagenes de makakos bebes</h3>
+    <!--Imagen desde internet-->
+
+    <img class="img1" src="https://img.huffingtonpost.es/files/image_720_480/uploads/2022/12/06/638f4825ed5f0.jpeg">
+
+        <!--Imagen desde PC-->
+        <img class="img2" src="imagenes/8.jpg"><!--class = img1 separa las imagenes en diferentes clases para personalizarlas
+        individualmente-->
+
+        <!--CREAR ENLACES EXTERNOS -->
+        <!--Enlace externo : Te lleva a otra pagina-->
+        <p><!--P : parrafo, coloca texto-->
+            Si quieres ver mas imagenes de makakos,
+            <!--HREF : enlace externo-->
+            <a href="https://www.google.com/search?q=macacos+bebes&tbm=
+            isch&chips=q:macacos+bebes,g_1:changos:75CbqVBVCBE%3D&rlz=
+            1C1ONGR_esMX949MX949&hl=es-419&sa=X&ved=2ahUKEwjij6288pv_
+            AhXLH94AHYbqCWwQ4lYoAHoECAEQJg&biw=664&bih=622"target="_blank"><!--abre una pagina nueva-->
+            da click en este enlace.</a><!-- A=gancho--> 
+        </p>
+
+        <h3>Listas de makakos bebes</h3>
+        <p>3 cosas que los makakos 
+        <strong>aman</strong> </p><!--STRONG : pone en negrita una palabra-->
+
+        <!--Lista ordenada-->
+        <ol><!--OL : Ordered list (lista ordenada)-->
+            <li>Bananas</li><!--LI : list Item
+            (Pone el numero 1)-->
+            <li>Jugar</li>
+            <li>Dormir</li>
+        </ol>
+
+        <p>3 cosas que los makakos
+        <i>odian</i></p> <!-- i: letra cursiva-->
+
+        <!--Lista desordenada-->
+        <ul>
+            <li>Que los molesten</li><!--li*3 : crea 3 elementos y asi ya no se ira
+            escribiendo li , uno por uno-->
+            <li>Caricias</li>
+            <li>Tener hambre</li>
+        </ul><!--UL : Unordered list-->
+
+        <!--Formularios con botones de radio:
+        Cualquier lado donde se registra informacion-->
+        <form>
+            <!--Form con botones de radio-->
+            <!--Solo se puede seleccionar una opcion-->
+            <p>¿Te gustan los makakos bebes o adultos?</p>
+            <label>
+                <input
+            id="bebes" 
+            type="radio"
+            value="bebes" 
+            name="bebes-adultos"
+            checked>Bebes <!--CHECKED: hace que la respuesta se quede seleccionada-->
+                <!--
+                    FORM : Define el inicio del formulario
+                    P : Parrafo
+                    LABEL : Asocia una etiqueta descriptiva con un elemnto del fomrulario
+                    INPUT : formularios que tienen que ver con botones de radio o casillas
+                    TYPE = RADIO : crea un boton para seleccionar un boton solamente
+                    VALUE :  Define el valor que se enviará cuando se envíe el formulario.
+                    NAME : Asigna un nombre al formulario
+                    ID : asigna un identificador unico 
+                -->
+            </label>
+            <br> <!--Romper , Pone los elementos en vertical | (opcional)-->
+            <label>
+                <input
+            id="adultos" 
+            type="radio"
+            value="adultos" 
+            name="bebes-adultos">Adultos
+
+            <!--Form con casillas de verificacion-->
+            <!--Se pueden seleccionar varias opciones-->
+            <p>¿Como se te hacen los makakos?</p>
+            <label>
+                <input
+                id="tiernos"
+                type="checkbox"
+                value="tiernos"
+                name="personalidad"
+                checked>Tiernos
+            </label>
+                <br>
+            <label>
+                <input
+                id="agresivos"
+                type="checkbox"
+                value="agresivos"
+                name="personalidad"
+                checked>Agresivos
+            </label>
+                <br>
+            <label>
+                <input
+                id="divertidos"
+                type="checkbox"
+                value="divertidos"
+                name="personalidad"
+                checked>Divertidos
+            </label>
+        </form>
+
+
+</body>
+
+<!--PIE DE PAGINA-->
+<footer>
+    <p>
+        <small>Esta pagina fue creada durante el bootcamp de 
+            <a href="https://tecnolochicas.mx/ "target="_blank">Tecnolochicas Pro</a>
+        </small>
+    </p>
+
+</footer>
+
+</html>
